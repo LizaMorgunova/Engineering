@@ -63,7 +63,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l3.png)
 
 ## Выводы
 
@@ -75,7 +75,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l4.png)
 
 ## Выводы
 
@@ -87,7 +87,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l5.png)
 
 ## Выводы
 
@@ -99,7 +99,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l6.png)
 
 ## Выводы
 
@@ -111,7 +111,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l7.png)
 
 ## Выводы
 
@@ -123,7 +123,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l8.png)
 
 ## Выводы
 
@@ -135,7 +135,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l9.png)
 
 ## Выводы
 
@@ -147,7 +147,7 @@ print(3 + 7.04 + 1 + 2.33)
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./l10.png)
 
 ## Выводы
 
