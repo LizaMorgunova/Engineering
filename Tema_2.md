@@ -181,10 +181,11 @@ print(sentence[:5])
 Программа выведет второй символ строки 'Hello World' - 'e', а затем выведет слово 'Hello' при помощи sentence.
 
 ## Самостоятельная работа №1
-###
+###Выведите в консоль булевую переменную False, не используя слово False в строке или изначально присвоенную булевую переменную. Программа должна занимать не более двух строк редактора кода.
 
 ```python
-
+str = ''
+print(bool(str))
 ```
 
 ### Результат.
@@ -194,118 +195,120 @@ print(sentence[:5])
 
 
 ## Самостоятельная работа №2
-###
+###Присвоить значения трем переменным и вывести их в консоль, используя только две строки редактора кода.
 
 ```python
-
+a, b, c = 1, 2, 3
+print(a, b, c)
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S2.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №3
-###
+###Реализуйте ввод данных в программу, через консоль, в виде только целых чисел (тип данных int). То есть при вводе буквенных символов в консоль, программа не должна работать. Программа должна занимать не более двух строк редактора кода.
 
 ```python
-
+a = int(input("Введите целое число: "))
+print(a)
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S3.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №4
-###
+###Создайте только одну строковую переменную. Длина строки должна не превышать 5 символов. На выходе мы должны получить строку длиной не менее 16 символов. Программа должна занимать не более двух строк редактора кода.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S4.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №5
-###
+###Создайте три переменные: день (тип данных - числовой), месяц (тип данных - строка), год (тип данных - числовой) и выведите в консоль текущую дату в формате: “Сегодня день месяц год. Всего хорошего!” используя F строку и оператор end внутри print(), в котором вы должны написать фразу “Всего хорошего!”. Программа должна занимать не более двух строк редактора кода.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S5.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №6
-###
+###В предложении ‘Hello World’ вставьте ‘my’ между двумя словами. Выведите полученное предложение в консоль в одну строку. Программа должна занимать не более двух строк редактора кода.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S6.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №7
-###
+###Узнайте длину предложения ‘Hello World’, результат выведите в консоль. Программа должна занимать не более двух строк редактора кода.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S7.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №8
-###
+###Переведите предложение ‘HELLO WORLD’ в нижний регистр. Программа должна занимать не более двух строк редактора кода.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S8.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №9
-###
+###Самостоятельно придумайте задачу по проходимой теме и решите ее. Задача должна быть связана со взаимодействием с числовыми значениями.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S9.png)
 
 ## Выводы
 
 
 ## Самостоятельная работа №10
-###
+###Самостоятельно придумайте задачу по проходимой теме и решите ее. Задача должна быть связанна со взаимодействием со строковыми значениями.
 
 ```python
 
 ```
 
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S10.png)
 
 ## Выводы
 
