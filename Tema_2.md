@@ -181,10 +181,134 @@ print(sentence[:5])
 Программа выведет второй символ строки 'Hello World' - 'e', а затем выведет слово 'Hello' при помощи sentence.
 
 ## Самостоятельная работа №1
-- Текст задания
-- Оформленный код
-- Скрины консоли
-- Развернутый вывод
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №2
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №3
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №4
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №5
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №6
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №7
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №8
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №9
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
+
+## Самостоятельная работа №10
+###
+
+```python
+
+```
+
+### Результат.
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_2/pic./S1.png)
+
+## Выводы
+
 
 ## Общие выводы по теме
 - Развернутый вывод
