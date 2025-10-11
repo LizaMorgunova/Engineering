@@ -240,7 +240,6 @@ for visitor, count in visitor_counts.items():
         max_visits = count
         most_frequent_visitor = visitor
 
-# Вывод результатов в консоль
 print(f"Выдано чеков {total_checks}")
 print(f"Посетило ресторан {unique_visitors}")
 print(f"Работник {most_frequent_visitor} посетил ресторан больше всех раз")
