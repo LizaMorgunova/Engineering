@@ -1,0 +1,5 @@
+user_input = input("Введите последовательность чисел: ")
+numbers_list = user_input.split()
+numbers_tuple = tuple(numbers_list)
+print("Список:", numbers_list)
+print("Кортеж:", numbers_tuple)
