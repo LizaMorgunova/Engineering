@@ -25,7 +25,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_1.jpg)
 
 ## Выводы
 
@@ -37,7 +37,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_2.jpg)
 
 ## Выводы
 
@@ -49,7 +49,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_3.jpg)
 
 ## Выводы
 
@@ -61,7 +61,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_4.jpg)
 
 ## Выводы
 
@@ -73,7 +73,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_5.jpg)
 
 ## Выводы
 
@@ -85,7 +85,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_6.jpg)
 
 ## Выводы
 
@@ -97,7 +97,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7.jpg)
 
 ## Выводы
 
@@ -109,7 +109,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_8.jpg)
 
 ## Выводы
 
@@ -132,7 +132,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_9.jpg)
 
 ## Выводы
 
@@ -147,7 +147,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_10.jpg)
 
 ## Выводы
 
@@ -159,7 +159,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1.jpg)
 
 ## Выводы
 
@@ -171,7 +171,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2.jpg)
 
 ## Выводы
 
@@ -185,7 +185,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_3.jpg)
 
 ## Выводы
 
@@ -200,7 +200,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_4.jpg)
 
 ## Выводы
 
@@ -212,7 +212,7 @@
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5.jpg)
 
 ## Выводы
 
