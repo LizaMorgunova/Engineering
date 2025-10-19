@@ -382,7 +382,8 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_1.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_2.jpg)
 
 ## Выводы
 Функция load_banned_words: Загружает запрещенные слова из файла (не используется в основном коде).
