@@ -107,13 +107,21 @@ with open('input.txt', 'r') as f:
 ### Напишите программу, которая перепишет всю информацию, которая была у вас в файле до этого, например напишет любые данные из произвольно вами составленного списка. Также не забудьте проверить что измененная вами информация сохранилась в файле.
 
 ```python
-
+import os
+def print_docs(directory):
+    all_files = os.walk(directory)
+    for catalog in all_files:
+        print(f'Папка {catalog[0]} содержит:')
+    print(f'Директории: {", ".join([folder for folder in catalog[1]])}')
+    print(f'Файлы: {", ".join([file for file in catalog[2]])}')
+    print('-' * 40)
+print_docs('C:/Users/RobotComp.ru/Desktop/images/small')
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7.jpg)
 
 ## Выводы
-
+Код предназначен для обхода указанной директории и вывода информации о папках и файлах в ней. 
 
 ## Лабораторная работа №8
 ### Выберите любую папку на своем компьютере, имеющую вложенные директории. Выведите на печать в терминал ее содержимое, как и всех подкаталогов при помощи функции print_docs(directory).
