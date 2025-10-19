@@ -41,7 +41,7 @@ print(f.readline())
 f.close()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_2.png)
 
 ## Выводы
 Код читает файл и выводит только первую строку из текстового файла.
@@ -55,7 +55,7 @@ print(f.readline())
 f.close()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_3.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_3.png)
 
 ## Выводы
 Код читает файл и выводит строку из текстового файла.
@@ -68,7 +68,7 @@ with open('input.txt') as f:
     print(f.readlines())
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_4.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_4.png)
 
 ## Выводы
 Метод readlines() считывает все строки из файла и возвращает их в виде списка.
@@ -82,7 +82,7 @@ with open('input.txt') as f:
         print(line)
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_5.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_5.png)
 
 ## Выводы
 При использовании with open('input.txt') as f: и for line in f: каждая строка файла будет выводиться с символом новой строки.
@@ -98,7 +98,7 @@ with open('input.txt', 'r') as f:
     print(result)
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_6.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_6.png)
 
 ## Выводы
 Код открывает файл input.txt, добавляет строку "Im additional line", затем читает и выводит все строки из файла.
@@ -114,8 +114,8 @@ with open('input.txt', 'w') as f:
     print('Done!')
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7_1.jpg)
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7_1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_7_2.png)
 
 ## Выводы
 В данном коде создаётся файл input.txt, в который записываются строки из списка lines. Каждая строка начинается с текста "Cycle run" и добавляется к новой строке. После завершения записи в файл выводится сообщение "Done!".
@@ -135,7 +135,7 @@ def print_docs(directory):
 print_docs('C:/Users/RobotComp.ru/Desktop/images/small')
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_8.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_8.png)
 
 ## Выводы
 Код предназначен для обхода указанной директории и вывода информации о папках и файлах в ней.
@@ -168,7 +168,7 @@ def longest_words(file):
 print(longest_words('input.txt'))
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_9.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_9.png)
 
 ## Выводы
 Функция открывает файл и считывает все слова.
@@ -195,8 +195,8 @@ with open('rows_300.csv', 'w', encoding='utf-8', newline='') as f:
     time.sleep(0.01)
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_10_1.jpg)
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_10_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_10_1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_10_2.png)
 
 ## Выводы
 Код создает CSV-файл, содержащий 300 строк с номером строки и значениями текущих секунд и микросекунд на момент записи. Однако из-за задержки в 0.01 секунды значения секунд могут не изменяться для каждой строки, что может привести к повторяющимся значениям в столбце "Секунда".
@@ -227,8 +227,8 @@ if __name__ == "__main__":
         print(f"Самое часто встречающееся слово: '{most_frequent_word}' (встречается {frequency} раз)")
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_1.jpg)
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_2.png)
 
 ## Выводы
 Программа открывает текстовый файл и считывает его содержимое.
@@ -285,8 +285,8 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_1.jpg)
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_2.png)
 
 ## Выводы
 Загрузка расходов: Читает данные из файла.
@@ -319,7 +319,7 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_3.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_3.png)
 
 ## Выводы
 Эта программа предназначена для анализа текстового файла, подсчитывая количество букв, слов и строк в нем. Она может быть полезна для различных задач, связанных с обработкой текста, например, для оценки длины документа или анализа его структуры.
@@ -352,7 +352,7 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_4.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_4.png)
 
 ## Выводы
 Функция load_banned_words читает слова из файла input.txt и сохраняет их в множество.
@@ -382,8 +382,8 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_1.jpg)
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_1.png)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_5_2.png)
 
 ## Выводы
 Функция load_banned_words: Загружает запрещенные слова из файла (не используется в основном коде).
