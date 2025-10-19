@@ -285,7 +285,8 @@ if __name__ == "__main__":
     main()
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_1.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2_2.jpg)
 
 ## Выводы
 Загрузка расходов: Читает данные из файла.
@@ -330,13 +331,36 @@ if __name__ == "__main__":
 ### • Ожидаемый результат: *****, ***ld! ****** ** *** programming language of *** future. My ***** **.... ****** ** awesome!!!!
 
 ```python
-
+import re
+def load_banned_words(filename):
+    with open(filename, 'r') as file:
+        return set(file.read().strip().split())
+def replace_banned_words(sentence, banned_words):
+    pattern = re.compile(r'\b(' + '|'.join(re.escape(word) for word in banned_words) + r')\b', re.IGNORECASE)
+    def replace(match):
+        return '*' * len(match.group(0))
+    return pattern.sub(replace, sentence)
+def main():
+    banned_words = load_banned_words('input.txt')
+    sentence = "Hello, world! Python IS the programming language of thE future. My EMAIL is.... PYTHON is awesome!!!!"
+    print("Исходное предложение:")
+    print(sentence)
+    result = replace_banned_words(sentence, banned_words)
+    print("\nРезультат:")
+    print(result)
+if __name__ == "__main__":
+    main()
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_4.jpg)
 
 ## Выводы
-
+Функция load_banned_words читает слова из файла input.txt и сохраняет их в множество.
+Функция replace_banned_words ищет запрещенные слова в предложении и заменяет их на звездочки.
+Основная программа:
+– Загружает запрещенные слова.
+– Определяет пример предложения.
+– Выводит исходное предложение и результат с замененными словами.
 
 ## Самостоятельная работа №5
 ### Самостоятельно придумайте и решите задачу, которая будет взаимодействовать с текстовым файлом.
