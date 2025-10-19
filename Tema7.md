@@ -27,7 +27,7 @@
 Это я!
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_1.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_1.png)
 
 ## Выводы
 Создан текстовый документ с 2 сторками в одной директории с программой на Python.
