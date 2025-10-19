@@ -205,25 +205,94 @@ with open('rows_300.csv', 'w', encoding='utf-8', newline='') as f:
 ### Найдите в интернете любую статью (объем статьи не менее 200 слов), скопируйте ее содержимое в файл и напишите программу, которая считает количество слов в текстовом файле и определит самое часто встречающееся слово. Результатом выполнения задачи будет: скриншот файла со статьей, листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация.
 
 ```python
-
+import re
+from collections import Counter
+def analyze_text_file(filepath="input.txt"):
+    with open(filepath, 'r', encoding='utf-8') as file:
+        text = file.read()
+    text = text.lower()
+    words = re.findall(r'\b\w+\b', text)
+    if not words:
+        print("Файл пуст или не содержит слов.")
+        return 0, None, 0
+    total_word_count = len(words)
+    word_counts = Counter(words)
+    most_common_word, most_common_count = word_counts.most_common(1)[0]
+    return total_word_count, most_common_word, most_common_count
+if __name__ == "__main__":
+    filepath = "input.txt"
+    word_count, most_frequent_word, frequency = analyze_text_file(filepath)
+    if word_count > 0:
+        print(f"Общее количество слов: {word_count}")
+        print(f"Самое часто встречающееся слово: '{most_frequent_word}' (встречается {frequency} раз)")
 ```
 ### Результат.
-![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_1.jpg)
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_1_2.jpg)
 
 ## Выводы
-
+Программа открывает текстовый файл и считывает его содержимое.
+Обработка текста:
+– Приводит текст к нижнему регистру.
+– Использует регулярные выражения для извлечения слов.
+Подсчет слов: Считает общее количество слов и определяет самое частое слово с помощью Counter.
+Вывод результатов: Печатает общее количество слов и самое часто встречающееся слово с его частотой.
 
 ## Самостоятельная работа №2
 ### У вас появилась потребность в ведении книги расходов, посмотрев все существующие варианты вы пришли к выводу что вас ничего не устраивает и нужно все делать самому. Напишите программу для учета расходов. Программа должна позволять вводить информацию о расходах, сохранять ее в файл и выводить существующие данные в консоль. Ввод информации происходит через консоль. Результатом выполнения задачи будет: скриншот файла с учетом расходов, листинг кода, и вывод в консоль, с демонстрацией работоспособности программы.
 
 ```python
-
+def load_expenses(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return [line.strip() for line in file.readlines()]
+def save_expense(expense, filename):
+    with open(filename, 'a', encoding='utf-8') as file:
+        file.write(expense + '\n')
+def add_expense():
+    date = input("Введите дату (ГГГГ-ММ-ДД): ")
+    description = input("Введите описание расхода: ")
+    amount = input("Введите сумму расхода: ")
+    expense = f"{date} | {description} | {amount}"
+    save_expense(expense, 'text.txt')
+    print("Расход успешно добавлен!")
+def display_expenses(expenses):
+    if not expenses:
+        print("Нет записанных расходов.")
+        return
+    print("\nВаши расходы:")
+    for expense in expenses:
+        print(expense)
+def main():
+    filename = "text.txt"
+    expenses = load_expenses(filename)
+    while True:
+        print("\nМеню:")
+        print("1. Добавить расход")
+        print("2. Показать все расходы")
+        print("3. Выход")
+        choice = input("Выберите действие (1/2/3): ")
+        if choice == '1':
+            add_expense()
+        elif choice == '2':
+            display_expenses(expenses)
+            expenses = load_expenses(filename)
+        elif choice == '3':
+            print("Выход из программы.")
+            break
+        else:
+            print("Неверный выбор. Пожалуйста, попробуйте снова.")
+if __name__ == "__main__":
+    main()
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_2.jpg)
 
 ## Выводы
-
+Загрузка расходов: Читает данные из файла.
+Сохранение расхода: Добавляет новый расход в файл.
+Добавление расхода: Запрашивает у пользователя дату, описание и сумму.
+Отображение расходов: Выводит все сохраненные расходы.
+Меню: Позволяет добавлять расходы, просматривать их или выходить из программы.
 
 ## Самостоятельная работа №3
 ### Имеется файл input.txt с текстом на латинице. Напишите программу, которая выводит следующую статистику по тексту: количество букв латинского алфавита; число слов; число строк. 
@@ -231,13 +300,28 @@ with open('rows_300.csv', 'w', encoding='utf-8', newline='') as f:
 ### • Ожидаемый результат: Input file contains: 108 letters 20 words 4 lines
 
 ```python
-
+def count_statistics(filename):
+    total_letters = 0
+    total_words = 0
+    total_lines = 0
+    with open(filename, 'r', encoding='utf-8') as file:
+        for line in file:
+            total_lines += 1
+            total_letters += sum(c.isalpha() for c in line)
+            total_words += len(line.split())
+    return total_letters, total_words, total_lines
+def main():
+    filename = 'input.txt'
+    letters, words, lines = count_statistics(filename)
+    print(f"Input file contains: {letters} letters {words} words {lines} lines")
+if __name__ == "__main__":
+    main()
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/Sam_3.jpg)
 
 ## Выводы
-
+Эта программа предназначена для анализа текстового файла, подсчитывая количество букв, слов и строк в нем. Она может быть полезна для различных задач, связанных с обработкой текста, например, для оценки длины документа или анализа его структуры.
 
 ## Самостоятельная работа №4
 ### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****. 
