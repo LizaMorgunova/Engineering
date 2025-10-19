@@ -155,13 +155,26 @@ print_docs('C:/Users/RobotComp.ru/Desktop/images/small')
 ### Требуется реализовать функцию, которая выводит слово, имеющее максимальную длину (или список слов, если таковых несколько). Проверьте работоспособность программы на своем наборе данных.
 
 ```python
-
+def longest_words(file):
+    with open(file, encoding='utf-8') as f:
+        words = f.read().split()
+        max_length = len(max(words, key=len))
+        for word in words:
+            if len(word) == max_length:
+                sought_words = word
+        if len(sought_words) == 1:
+            return sought_words[0]
+        return sought_words
+print(longest_words('input.txt'))
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_7/pic/lab_9.jpg)
 
 ## Выводы
-
+Функция открывает файл и считывает все слова.
+Определяет максимальную длину слова.
+Находит все слова, соответствующие этой длине.
+Если найдено одно самое длинное слово, возвращает его; если несколько — возвращает их все.
 
 ## Лабораторная работа №10
 ### Требуется создать csv-файл «rows_300.csv» со следующими столбцами: 
