@@ -237,37 +237,127 @@ print(description)
 ### Самостоятельно реализуйте наследование, продолжая работать с ранее созданным классом. Оно должно отличаться, от того, что указано в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-
+class Triangle:
+    def __init__(self, base, height, side_a, side_b, side_c, color):
+        self.base = base
+        self.height = height
+        self.side_a = side_a
+        self.side_b = side_b
+        self.side_c = side_c
+        self.color = color
+    def area(self):
+        return 0.5 * self.base * self.height
+    def perimeter(self):
+        return self.side_a + self.side_b + self.side_c
+    def describe(self):
+        return f"Triangle with color {self.color}: Area: {self.area()}, Perimeter: {self.perimeter()}"
+class EquilateralTriangle(Triangle):
+    def __init__(self, side_length, color):
+        super().__init__(base=side_length, height=(side_length * (3 ** 0.5)) / 2,
+                         side_a=side_length, side_b=side_length, side_c=side_length,
+                         color=color)
+    def describe(self):
+        return f"Equilateral Triangle with color {self.color}: Area: {self.area()}, Perimeter: {self.perimeter()}"
+equilateral_triangle = EquilateralTriangle(side_length=5, color='blue')
+print(equilateral_triangle.describe())
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_3.png)
 
 ## Выводы
-
+Triangle - базовый класс для треугольников с методами для вычисления площади и периметра.
+EquilateralTriangle наследует Triangle, принимает длину стороны и цвет, вычисляет высоту.
+Создается равносторонний треугольник с длиной стороны 5 и цветом 'blue', выводится его описание.
 
 ## Самостоятельная работа №4
 ### Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-
+class Triangle:
+    def __init__(self, base, height, side_a, side_b, side_c, color):
+        self.__base = base
+        self.__height = height
+        self.__side_a = side_a
+        self.__side_b = side_b
+        self.__side_c = side_c
+        self.__color = color
+    def area(self):
+        return 0.5 * self.__base * self.__height
+    def perimeter(self):
+        return self.__side_a + self.__side_b + self.__side_c
+    def get_color(self):
+        return self.__color
+class EquilateralTriangle(Triangle):
+    def __init__(self, side_length, color):
+        super().__init__(base=side_length, height=(side_length * (3 ** 0.5)) / 2,
+                         side_a=side_length, side_b=side_length, side_c=side_length,
+                         color=color)
+    def describe(self):
+        return f"Equilateral Triangle with color {self.get_color()}: Area: {self.area()}, Perimeter: {self.perimeter()}"
+equilateral_triangle = EquilateralTriangle(side_length=5, color='blue')
+print(equilateral_triangle.describe())
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_4.png)
 
 ## Выводы
-
+1. Все атрибуты класса Triangle начинаются с двойного подчеркивания (__), что делает их приватными.
+2. Мы сохранили методы для вычисления площади и периметра.
+3. Добавлен один простой геттер для получения цвета треугольника.
+4. В классе EquilateralTriangle мы используем конструктор родительского класса для инициализации.
 
 ## Самостоятельная работа №5
 ### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-
+import math
+class Shape:
+    def area(self):
+        raise NotImplementedError("Subclasses must implement this method")
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5 * self.base * self.height
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width * self.height
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return math.pi * (self.radius ** 2)
+def print_area(shape):
+    print(f"The area of the shape is: {shape.area()}")
+shapes = [
+    Triangle(base=5, height=10),
+    Rectangle(width=4, height=6),
+    Circle(radius=3)
+]
+for shape in shapes:
+    print_area(shape)
 ```
 ### Результат.
 ![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_5.png)
 
 ## Выводы
-
+1. Базовый класс Shape - это абстрактный класс с методом area(), который должен быть реализован в подклассах.
+2. Подклассы:
+– Triangle реализует метод area() для вычисления площади треугольника.
+– Rectangle реализует метод area() для вычисления площади прямоугольника.
+– Circle реализует метод area() для вычисления площади круга.
+3. Функция print_area принимает объект типа Shape и вызывает его метод area(), демонстрируя полиморфизм.
 
 ## Общие выводы по теме
-- Развернутый вывод
+Наследование позволяет создавать иерархии классов, избегая дублирования кода.
+Разные классы могут иметь методы с одинаковыми именами, но с разной реализацией.
+Разделение кода на классы и методы облегчает тестирование и повторное использование.
+Хорошо структурированный код с понятными именами легче читать и поддерживать.
+Абстрактные классы определяют общий интерфейс для подклассов, упрощая работу с различными типами объектов.
+Методы для расчета площади и периметра демонстрируют применение математических формул в коде.
+Легко добавлять новые фигуры, расширяя функциональность программы.
+Применение стандартных библиотек, таких как math, для выполнения общих задач.
