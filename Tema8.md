@@ -29,7 +29,7 @@ class Car:
 my_car = Car("Toyota", "Corolla")
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/lab_1.png)
 
 ## Выводы
 1. class Car: — создаёт новый класс с именем Car.
@@ -51,7 +51,7 @@ my_car = Car("Toyota", "Corolla")
 my_car.drive()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/lab_2.png)
 
 ## Выводы
 Методы __init__ и drive устанавливают марку и модель автомобиля и выводят сообщение о движении. При создании экземпляра my_car атрибуты не инициализируются, что приводит к ошибке при вызове my_car.drive().
@@ -79,7 +79,7 @@ my_electric_car.drive()
 my_electric_car.charge()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/lab_3.png)
 
 ## Выводы
 Car:
@@ -104,7 +104,7 @@ print(my_car._make)
 my_car.drive()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/lab_4.png)
 
 ## Выводы
 Конструктор init:
@@ -147,7 +147,7 @@ class Circle(Shape):
         return 3.14 * self.radius * self.radius
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/lab_5.png)
 
 ## Выводы
 Shape содержит абстрактный метод area(), который должен быть реализован в дочерних классах.
@@ -161,7 +161,7 @@ Circle инициализируется с радиусом, а метод area(
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_1.png)
 
 ## Выводы
 
@@ -173,7 +173,7 @@ Circle инициализируется с радиусом, а метод area(
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_2.png)
 
 ## Выводы
 
@@ -185,7 +185,7 @@ Circle инициализируется с радиусом, а метод area(
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_3.png)
 
 ## Выводы
 
@@ -197,7 +197,7 @@ Circle инициализируется с радиусом, а метод area(
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_4.png)
 
 ## Выводы
 
@@ -209,7 +209,7 @@ Circle инициализируется с радиусом, а метод area(
 
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_8/pic/Sam_5.png)
 
 ## Выводы
 
