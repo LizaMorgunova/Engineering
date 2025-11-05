@@ -31,7 +31,7 @@ print(person2.name)
 person2.surname = 'Петров'
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./lab_1.png)
 
 ## Выводы
 Код определяет класс Ivan, который использует атрибут name для хранения строки, содержащей информацию о том, является ли объект экземпляром с именем "Иван". Если имя "Иван", то строка будет "Да, я Иван", в противном случае — "Я не [имя], а Иван".
@@ -60,7 +60,7 @@ icecream = Icecream(5)
 icecream.composition()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./lab_2.png)
 
 ## Выводы
 В методе инициализации init (неправильно, должно быть __init__) проверяется, является ли переданный аргумент строкой. Если да, то он сохраняется как атрибут ingredient; если нет, атрибут устанавливается в None.
@@ -92,7 +92,7 @@ obj. del_value()
 print(obj.get_value())
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./lab_3.png)
 
 ## Выводы
 Метод init (должен быть __init__) принимает значение и сохраняет его в атрибуте _value.
@@ -118,7 +118,7 @@ cat = Cat()
 print(f"Cat is {cat.className}, but they say {cat.sounds}")
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./lab_4.png)
 
 ## Выводы
 Mammal базовый класс, содержащий атрибут className, который указывает, что это млекопитающее.
@@ -145,7 +145,7 @@ john = English()
 greet(john)
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./lab_5.png)
 
 ## Выводы
 Код определяет два класса: Russian и English, каждый из которых содержит статический метод greeting(), выводящий приветствие на соответствующем языке (русском и английском). Функция greet(language) принимает экземпляр класса и вызывает его метод greeting(). 
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     test_knowledge_base()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./Sam_1.png)
 
 ## Выводы
 Класс Tomato:
@@ -329,7 +329,7 @@ if __name__ == "__main__":
     test_create_objects()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./Sam_2.png)
 
 ## Выводы
 test_create_objects создает объекты TomatoBush и Gardener, проверяет их типы и количество томатов в кусте.
@@ -415,7 +415,7 @@ if __name__ == "__main__":
     test_care_for_tomato_bush()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./Sam_3.png)
 
 ## Выводы
 test_care_for_tomato_bush ухаживает за кустом и проверяет, что все томаты стали ростками.
@@ -505,7 +505,7 @@ if __name__ == "__main__":
     test_harvest_before_ripe()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./Sam_4.png)
 
 ## Выводы
 test_harvest_before_ripe пытается собрать урожай до того, как томаты созреют, и проверяет, что они не были собраны.
@@ -596,7 +596,7 @@ if __name__ == "__main__":
     test_harvest_after_ripe()
 ```
 ### Результат.
-![Меню]()
+![Меню](https://github.com/LizaMorgunova/Software_Engineering/blob/Тема_9/pic./Sam_5.png)
 
 ## Выводы
 test_harvest_after_ripe ухаживает за кустом до тех пор, пока все томаты не созреют, а затем собирает урожай и проверяет, что все томаты были собраны.
