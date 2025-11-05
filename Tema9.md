@@ -151,31 +151,191 @@ greet(john)
 Код определяет два класса: Russian и English, каждый из которых содержит статический метод greeting(), выводящий приветствие на соответствующем языке (русском и английском). Функция greet(language) принимает экземпляр класса и вызывает его метод greeting(). 
 
 ## Самостоятельная работа №1
-### 
+### Вызовите справку по садоводству.
 
 ```python
+class Tomato:
+    # Статическое свойство, содержащее стадии созревания помидора
+    states = ["seed", "sprout", "flower", "green", "ripe"]
 
+    def __init__(self, index):
+        # Динамические свойства
+        self._index = index  # Индекс томата (публичное свойство)
+        self._state = Tomato.states[0]  # Начальное состояние (первое значение из states)
+
+    # Метод для перевода томата на следующую стадию созревания
+    def grow(self):
+        current_index = Tomato.states.index(self._state)
+        if current_index < len(Tomato.states) - 1:
+            self._state = Tomato.states[current_index + 1]
+
+    # Метод для проверки, созрел ли томат
+    def is_ripe(self):
+        return self._state == "ripe"
+
+
+class TomatoBush:
+    def __init__(self, number_of_tomatoes):
+        # Динамическое свойство, хранящее список томатов
+        self.tomatoes = [Tomato(i) for i in range(number_of_tomatoes)]
+
+    # Метод для перевода всех томатов на следующий этап созревания
+    def grow_all(self):
+        for tomato in self.tomatoes:
+            tomato.grow()
+
+    # Метод для проверки, все ли томаты стали спелыми
+    def all_are_ripe(self):
+        return all(tomato.is_ripe() for tomato in self.tomatoes)
+
+    # Метод для сбора урожая и очистки списка томатов
+    def give_away_all(self):
+        self.tomatoes.clear()
+
+
+class Gardener:
+    def __init__(self, name, plant):
+        # Динамические свойства
+        self.name = name  # Имя садовника (публичное свойство)
+        self._plant = plant  # Объект класса TomatoBush (приватное свойство)
+
+    # Метод, который заставляет садовника работать и способствует созреванию помидоров
+    def work(self):
+        self._plant.grow_all()
+
+    # Метод для проверки, все ли плоды созрели и сбора урожая
+    def harvest(self):
+        if self._plant.all_are_ripe():
+            print(f"{self.name} собрал урожай!")
+            self._plant.give_away_all()
+        else:
+            print(f"{self.name} предупреждает: не все помидоры созрели!")
+
+    @staticmethod
+    def knowledge_base():
+        print("Справка по садоводству:")
+        print("1. Поливайте растения регулярно.")
+        print("2. Убедитесь, что у них достаточно солнечного света.")
+        print("3. Удаляйте увядшие листья и плоды.")
+        print("4. Используйте удобрения для улучшения роста.")
+
+def test_knowledge_base():
+    Gardener.knowledge_base()  # Проверяем, что метод вызывается без ошибок
+    print("test_knowledge_base: Passed")
+
+if __name__ == "__main__":
+    test_knowledge_base()
 ```
 ### Результат.
 ![Меню]()
 
 ## Выводы
+Класс Tomato:
+– Статическое свойство states содержит стадии созревания.
+– Динамические свойства _index (индекс томата) и _state (текущая стадия).
+– Метод grow() переводит томат на следующую стадию.
+– Метод is_ripe() проверяет, созрел ли томат.
 
+Класс TomatoBush:
+– Динамическое свойство tomatoes хранит список объектов класса Tomato.
+– Метод grow_all() переводит все томаты на следующий этап созревания.
+– Метод all_are_ripe() проверяет, все ли томаты спелые.
+– Метод give_away_all() очищает список томатов после сбора урожая.
+
+Класс Gardener:
+– Динамические свойства name (имя садовника) и _plant (объект класса TomatoBush).
+– Метод work() заставляет садовника работать с растениями.
+– Метод harvest() проверяет, созрели ли все плоды, и собирает урожай.
+– Статический метод knowledge_base() выводит справку по садоводству.
+
+test_knowledge_base проверяет, что метод справки по садоводству работает без ошибок.
 
 ## Самостоятельная работа №2
-### 
+### Создайте объекты классов TomatoBush и Gardener.
 
 ```python
+class Tomato:
+    # Статическое свойство, содержащее стадии созревания помидора
+    states = ["seed", "sprout", "flower", "green", "ripe"]
 
+    def __init__(self, index):
+        # Динамические свойства
+        self._index = index  # Индекс томата (публичное свойство)
+        self._state = Tomato.states[0]  # Начальное состояние (первое значение из states)
+
+    # Метод для перевода томата на следующую стадию созревания
+    def grow(self):
+        current_index = Tomato.states.index(self._state)
+        if current_index < len(Tomato.states) - 1:
+            self._state = Tomato.states[current_index + 1]
+
+    # Метод для проверки, созрел ли томат
+    def is_ripe(self):
+        return self._state == "ripe"
+
+
+class TomatoBush:
+    def __init__(self, number_of_tomatoes):
+        # Динамическое свойство, хранящее список томатов
+        self.tomatoes = [Tomato(i) for i in range(number_of_tomatoes)]
+
+    # Метод для перевода всех томатов на следующий этап созревания
+    def grow_all(self):
+        for tomato in self.tomatoes:
+            tomato.grow()
+
+    # Метод для проверки, все ли томаты стали спелыми
+    def all_are_ripe(self):
+        return all(tomato.is_ripe() for tomato in self.tomatoes)
+
+    # Метод для сбора урожая и очистки списка томатов
+    def give_away_all(self):
+        self.tomatoes.clear()
+
+
+class Gardener:
+    def __init__(self, name, plant):
+        # Динамические свойства
+        self.name = name  # Имя садовника (публичное свойство)
+        self._plant = plant  # Объект класса TomatoBush (приватное свойство)
+
+    # Метод, который заставляет садовника работать и способствует созреванию помидоров
+    def work(self):
+        self._plant.grow_all()
+
+    # Метод для проверки, все ли плоды созрели и сбора урожая
+    def harvest(self):
+        if self._plant.all_are_ripe():
+            print(f"{self.name} собрал урожай!")
+            self._plant.give_away_all()
+        else:
+            print(f"{self.name} предупреждает: не все помидоры созрели!")
+
+    @staticmethod
+    def knowledge_base():
+        print("Справка по садоводству:")
+        print("1. Поливайте растения регулярно.")
+        print("2. Убедитесь, что у них достаточно солнечного света.")
+        print("3. Удаляйте увядшие листья и плоды.")
+        print("4. Используйте удобрения для улучшения роста.")
+
+def test_create_objects():
+    bush = TomatoBush(5)  # Создаем куст с 5 томатами
+    gardener = Gardener("John", bush)  # Создаем садовника с именем John
+    assert len(bush.tomatoes) == 5, "Failed: bush does not contain 5 tomatoes"
+    print("test_create_objects: Passed")
+
+if __name__ == "__main__":
+    test_create_objects()
 ```
 ### Результат.
 ![Меню]()
 
 ## Выводы
-
+test_create_objects создает объекты TomatoBush и Gardener, проверяет их типы и количество томатов в кусте.
 
 ## Самостоятельная работа №3
-### 
+### Используя объект класса Gardener, поухаживайте за кустом с помидорами.
 
 ```python
 
@@ -187,7 +347,7 @@ greet(john)
 
 
 ## Самостоятельная работа №4
-### 
+### Попробуйте собрать урожай, когда томаты еще не дозрели. Продолжайте ухаживать за ними.
 
 ```python
 
@@ -199,7 +359,7 @@ greet(john)
 
 
 ## Самостоятельная работа №5
-### 
+### Соберите урожай.
 
 ```python
 
